@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.customized-scrollbar::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+    background-color: #ffffff0d; /* or add it to the track */
+  }
+  
+  /* Add a thumb */
+  .customized-scrollbar::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: #FF6A1F;
+  }
+
+  .snap-inline{
+    scroll-snap-type: inline mandatory;
+}
+
+.snap-inline > * {
+    scroll-snap-align: start;
+}
