@@ -1,6 +1,8 @@
 <script>
 	import Carousel from "../lib/carousel/carousel.svelte";
-    import data from "../lib/dummy_data/final_articles_techCrunch.json"
+    // import data from "../lib/dummy_data/final_articles_techCrunch.json"
+    export let data
+    const {allNews} = data
     // let cardsData = [
     //     {
     //         name: "tuhi"
@@ -11,7 +13,7 @@
     //     }
     // ]
 
-    let cardsData = data
+    let cardsData = allNews.news
 </script>
 
 <div class="w-screen h-screen "> 
