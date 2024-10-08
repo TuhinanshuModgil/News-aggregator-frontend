@@ -32,7 +32,7 @@
     </button>
 </div>
 </div>
-<ul class="list-disc" >
+<ul class="list-disc p-2" >
 
     {#each cardData.article_text as newsPoint, index (index) }
     {#if newsPoint !== ""}
