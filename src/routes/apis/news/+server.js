@@ -3,7 +3,7 @@ import { json } from '@sveltejs/kit';
 export async function GET() {
 	try {
 		const res = await fetch(
-			`http://localhost:8000/news/all-news`
+			`https://news-aggregator-backend-orpin.vercel.app/news/all-news`
 		);
         if(!res.ok){
             throw new Error('Failed to fetch data')

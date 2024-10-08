@@ -3,7 +3,7 @@ import { json } from '@sveltejs/kit';
 export async function POST({ request }) {
 	try {
         let upvoteData = await request.json()
-		const res = await fetch(`http://localhost:8000/news/upvote-news`, {
+		const res = await fetch(`https://news-aggregator-backend-orpin.vercel.app/news/upvote-news`, {
 			method: 'POST',
 			body: JSON.stringify(upvoteData),
 			headers: {
