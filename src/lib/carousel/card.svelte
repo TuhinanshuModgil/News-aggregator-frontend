@@ -17,7 +17,7 @@
     <h3 class="mb-2">
         {cardData.article_date}
 </h3>
-<h1 class="text-5xl font-semibold mb-2">
+<h1 class="lg:text-5xl text-2xl lg:font-semibold font-bold mb-2">
     {cardData.article_title}
 </h1>
 <div class="flex justify-between mb-2">
